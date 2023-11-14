@@ -1,5 +1,6 @@
 import reactLogo from './assets/react.svg';
-import './App.css';
+import './App.scss';
+import Navbar from './Components/Navbar';
 
 {
   /* <a href="https://react.dev" target="_blank">
@@ -10,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div></div>
+      <Navbar />
     </>
   );
 }
