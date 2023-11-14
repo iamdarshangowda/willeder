@@ -1,0 +1,73 @@
+@import '../Variables/Variables.scss';
+
+.vertical-container {
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .vertical-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 280px;
+    background-color: $purpleColor;
+    z-index: -1;
+    text-align: center;
+    color: $whiteColor;
+
+    .top-text {
+      margin-top: 15rem;
+    }
+
+    .bar-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 4rem;
+      letter-spacing: 0.3em;
+      margin: 0px;
+    }
+
+    .bar-subTitle {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2.375rem;
+      letter-spacing: 0.3em;
+      margin: 0px;
+    }
+  }
+
+  .triple-images {
+    margin: 25rem 0 15rem 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+
+    .background-card {
+      position: relative;
+      text-align: center;
+    }
+
+    .image-text {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: $whiteColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
