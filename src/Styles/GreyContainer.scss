@@ -1,0 +1,52 @@
+@import '../Variables/Variables.scss';
+
+.grey-container {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  background-color: $greyColor;
+  z-index: -2;
+
+  .grey-image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -50%);
+    max-width: 650px;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      z-index: 2;
+    }
+  }
+
+  .grey-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(40%, -50%);
+    max-width: 500px;
+
+    .arrow-container {
+      display: flex;
+      gap: 10px;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-device-width: $large) {
+    .grey-text-container {
+      max-width: 400px;
+    }
+  }
+
+  @media only screen and (max-device-width: 1080px) {
+    .grey-text-container {
+      max-width: 300px;
+      transform: translate(50%, -50%);
+    }
+  }
+}
