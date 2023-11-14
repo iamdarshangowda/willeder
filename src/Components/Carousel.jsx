@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import '../Styles/Carousel.scss';
 
 const images = ['./background-1.png', './background-2.png', './background-3.png'];
 

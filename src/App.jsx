@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg';
 import './App.scss';
 import Navbar from './Components/Navbar';
 import Carousel from './Components/Carousel';
+import Description from './Components/Description';
 
 {
   /* <a href="https://react.dev" target="_blank">
@@ -14,6 +15,7 @@ function App() {
     <main>
       <Navbar />
       <Carousel />
+      <Description />
     </main>
   );
 }

@@ -1,0 +1,58 @@
+@import '../Variables/Variables.scss';
+
+.company-details {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $whiteColor;
+  text-align: center;
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    img {
+      width: 145px;
+      height: 145px;
+    }
+    h1 {
+      font-family: Revalia;
+      font-weight: 400;
+      font-size: 4.875rem;
+      letter-spacing: 25px;
+      line-height: 8.3125rem;
+      margin: 0px;
+      text-transform: uppercase;
+    }
+  }
+  .bar-text {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    letter-spacing: 0.625rem;
+
+    width: 100%;
+    background-color: $purpleColor;
+  }
+
+  .text-description {
+    max-width: 75%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.625rem;
+  }
+
+  .scroll-text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    letter-spacing: 0.3125rem;
+  }
+
+  .line {
+    border: 1px solid $whiteColor;
+    height: 65px;
+  }
+}
