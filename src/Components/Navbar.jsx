@@ -13,6 +13,9 @@ const Navbar = () => {
         <li>Page 1</li>
         <li>Page 2</li>
       </ul>
+      <div className="menu-bar">
+        <img src="./menu.png" about="menu bar" />
+      </div>
     </nav>
   );
 };

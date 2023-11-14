@@ -9,8 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   padding: 14px 80px;
-  // border: 1px solid $borderColor;
   background-color: $whiteColor;
   opacity: 0.85;
   box-shadow: 0px 4px 4px 0px #00000040;
@@ -33,18 +33,23 @@
     padding: 0px;
     list-style-type: none;
   }
-}
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  img {
-    width: 45px;
-    height: 45px;
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .menu-bar {
+    display: none;
   }
 
   @media only screen and (max-device-width: $small) {
+    padding: 10px 16px;
     h1 {
       font-size: 1.25rem;
       line-height: 32px;
@@ -55,6 +60,13 @@
         width: 30px;
         height: 30px;
       }
+    }
+    ul {
+      display: none;
+    }
+    .menu-bar {
+      display: block;
+      margin-left: auto;
     }
   }
 }
