@@ -43,4 +43,18 @@
     width: 45px;
     height: 45px;
   }
+
+  @media only screen and (max-device-width: $small) {
+    h1 {
+      font-size: 1.25rem;
+      line-height: 32px;
+      letter-spacing: 0.3em;
+    }
+    .logo-container {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }

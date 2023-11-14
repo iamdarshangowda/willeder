@@ -2,6 +2,8 @@
 
 .company-details {
   position: absolute;
+  left: 0px;
+  right: 0px;
   bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -41,6 +43,7 @@
     max-width: 75%;
     font-size: 1.25rem;
     font-weight: 600;
+    line-height: 2rem;
     letter-spacing: 0.625rem;
   }
 
@@ -54,5 +57,37 @@
   .line {
     border: 1px solid $whiteColor;
     height: 65px;
+  }
+
+  @media only screen and (max-device-width: $small) {
+    .header-logo {
+      img {
+        width: 70px;
+        height: 70px;
+      }
+      h1 {
+        font-weight: 400;
+        font-size: 2.25rem;
+        letter-spacing: 20px;
+        line-height: 5rem;
+      }
+    }
+    .bar-text {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 2rem;
+      letter-spacing: 0.3125rem;
+      background-color: transparent;
+    }
+    .text-description {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.3125rem;
+      opacity: 0.8;
+      letter-spacing: 0.3125rem;
+    }
+    .line {
+      height: 45px;
+    }
   }
 }
