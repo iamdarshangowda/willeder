@@ -20,3 +20,15 @@
 body {
   min-height: 100vh;
 }
+
+@media only screen and (max-device-width: 1380px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}

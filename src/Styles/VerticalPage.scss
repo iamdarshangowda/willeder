@@ -15,46 +15,12 @@
     width: 280px;
     background-color: $purpleColor;
     z-index: -1;
-    text-align: center;
-    color: $whiteColor;
-
-    .top-text {
-      margin-top: 15rem;
-    }
-
-    .bar-title {
-      font-size: 2.5rem;
-      font-weight: 600;
-      line-height: 4rem;
-      letter-spacing: 0.3em;
-      margin: 0px;
-    }
-
-    .bar-subTitle {
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 2.375rem;
-      letter-spacing: 0.3em;
-      margin: 0px;
-    }
   }
 
   @media only screen and (max-device-width: $medium) {
     .vertical-bar {
       width: 40px;
       background-color: $lightPurpleColor;
-
-      .top-text {
-        margin-top: 5rem;
-      }
-
-      .bar-title {
-        color: $purpleColor;
-      }
-
-      .bar-subTitle {
-        color: $blackColor;
-      }
     }
   }
 }
