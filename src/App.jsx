@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg';
 import './App.scss';
 import Navbar from './Components/Navbar';
+import Carousel from './Components/Carousel';
 
 {
   /* <a href="https://react.dev" target="_blank">
@@ -10,9 +11,10 @@ import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <>
+    <main>
       <Navbar />
-    </>
+      <Carousel />
+    </main>
   );
 }
 
