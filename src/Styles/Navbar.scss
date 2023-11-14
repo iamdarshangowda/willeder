@@ -23,6 +23,7 @@
     margin: 0px;
     text-transform: uppercase;
   }
+
   ul {
     font-weight: 600;
     letter-spacing: 3px;
@@ -61,12 +62,31 @@
         height: 30px;
       }
     }
-    ul {
+    .menu-bar-close {
       display: none;
+    }
+    .menu-bar-open {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      top: 50px;
+      padding: 10px;
+      background-color: $whiteColor;
+      width: 100%;
+      text-align: right;
+
+      li {
+        padding: 0px 20px;
+      }
     }
     .menu-bar {
       display: block;
       margin-left: auto;
+      img {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
