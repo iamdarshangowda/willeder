@@ -9,6 +9,9 @@ const GreyContainer = () => {
       </div>
       <div className="grey-text-container">
         <h3>Lorem ipsum</h3>
+        <div className="grey-mobile-image-container">
+          <img src="./Rectangle.png" alt="rectangleImage" />
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto nisi beatae
           error aliquam eaque quis vel tempore officiis, obcaecati natus expedita sit et.

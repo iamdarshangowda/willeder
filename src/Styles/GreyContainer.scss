@@ -35,7 +35,7 @@
       margin-top: 4rem;
 
       p {
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 600;
         line-height: 160%; /* 25.6px */
         letter-spacing: 4.8px;
@@ -47,7 +47,7 @@
       font-size: 2rem;
       font-weight: 600;
       line-height: 160%; /* 51.2px */
-      letter-spacing: 9.6px;
+      letter-spacing: 0.6rem;
       border-bottom: 8px solid $purpleColor;
     }
 
@@ -58,6 +58,10 @@
       letter-spacing: 0.8px;
       opacity: 0.8;
       margin-top: 2rem;
+    }
+
+    .grey-mobile-image-container {
+      display: none;
     }
   }
 
@@ -76,6 +80,30 @@
 
   @media only screen and (max-device-width: $small) {
     .grey-text-container {
+      max-width: 75%;
+      left: 0;
+      transform: translate(0%, -50%);
+
+      p {
+        padding: 0px 16px;
+      }
+
+      h3 {
+        padding-left: 16px;
+        border-bottom: 4px solid $purpleColor;
+      }
+
+      .grey-mobile-image-container {
+        display: block;
+        margin: 32px 0px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .grey-image-container {
       display: none;
     }
   }
