@@ -25,8 +25,8 @@
       font-family: Revalia;
       font-weight: 400;
       font-size: 4.875rem;
-      letter-spacing: 25px;
       line-height: 8.3125rem;
+      letter-spacing: 2.34rem;
       margin: 0px;
       text-transform: uppercase;
     }
@@ -34,9 +34,8 @@
   .bar-text {
     font-size: 2rem;
     font-weight: 600;
-    line-height: 3.2rem;
-    letter-spacing: 0.625rem;
-
+    line-height: 160%; /* 51.2px */
+    letter-spacing: 0.6rem;
     width: 100%;
     background-color: $purpleColor;
   }
@@ -45,8 +44,8 @@
     max-width: 75%;
     font-size: 1.25rem;
     font-weight: 600;
-    line-height: 2rem;
-    letter-spacing: 0.625rem;
+    line-height: 160%; /* 32px */
+    letter-spacing: 0.375rem;
   }
 
   .scroll-text {

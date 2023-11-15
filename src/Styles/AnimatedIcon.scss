@@ -1,0 +1,40 @@
+@import '../Variables/Variables.scss';
+
+.square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0px;
+  gap: 120px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-top: 100px solid $triangleGreen;
+  border-right: 100px solid $triangleYellow;
+  border-left: 100px solid $triangleBlue;
+  border-bottom: 100px solid $triangleRed;
+
+  animation: rotateAndScale 4s infinite;
+  transform-origin: center;
+
+  @keyframes rotateAndScale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(360deg) scale(1);
+    }
+    50% {
+      transform: rotate(360deg) scale(1);
+    }
+    75% {
+      transform: rotate(360deg) scale(1.5);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+}

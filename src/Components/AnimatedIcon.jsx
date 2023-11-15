@@ -1,7 +1,12 @@
 import React from 'react';
+import '../Styles/AnimatedIcon.scss';
 
 const AnimatedIcon = () => {
-  return <div style={{ height: '450px' }}>AnimatedIcon</div>;
+  return (
+    <div className="square-container">
+      <div class="square"></div>
+    </div>
+  );
 };
 
 export default AnimatedIcon;
