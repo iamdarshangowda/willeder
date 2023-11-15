@@ -11,42 +11,42 @@
   .background-card {
     position: relative;
     text-align: center;
-  }
 
-  .image-text {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 60px;
-    color: $whiteColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    .header-text {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 3.25rem;
-      letter-spacing: 0.3em;
+    img {
+      max-width: 640px;
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
     }
 
-    .sub-text {
-      font-size: 1.25rem;
-      font-weight: 400;
-      line-height: 1.875rem;
-      letter-spacing: 0.05em;
-    }
-  }
+    .image-text {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 60px;
+      color: $whiteColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
 
-  img {
-    max-width: 640px;
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+      .header-text {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 3.25rem;
+        letter-spacing: 0.3em;
+      }
+
+      .sub-text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+        letter-spacing: 0.05em;
+      }
+    }
   }
 
   .top-text {
@@ -79,12 +79,14 @@
     grid-template-columns: auto;
     gap: 1.25rem;
 
-    .image-text {
-      padding: 10px 30px;
-    }
+    .background-card {
+      .image-text {
+        padding: 10px 30px;
+      }
 
-    img {
-      width: 90%;
+      img {
+        width: 90%;
+      }
     }
 
     .top-text {
@@ -101,9 +103,11 @@
   }
 
   @media only screen and (max-device-width: $small) {
-    img {
-      width: 90%;
-      height: 256px;
+    .background-card {
+      img {
+        width: 90%;
+        height: 256px;
+      }
     }
   }
 }
