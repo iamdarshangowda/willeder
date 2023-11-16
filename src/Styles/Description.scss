@@ -1,20 +1,30 @@
 @import '../Variables/Variables.scss';
 
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin textValues($size, $weight, $height, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
 .company-details {
+  @include flex;
   position: absolute;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 25px;
   color: $whiteColor;
   text-align: center;
   .header-logo {
-    display: flex;
-    align-items: center;
+    @include flex;
     gap: 25px;
     margin-bottom: 20px;
     img {
@@ -22,20 +32,14 @@
       height: 145px;
     }
     h1 {
+      @include textValues(4.875rem, 400, 8.3125rem, 2.34rem);
       font-family: Revalia;
-      font-weight: 400;
-      font-size: 4.875rem;
-      line-height: 8.3125rem;
-      letter-spacing: 2.34rem;
       margin: 0px;
       text-transform: uppercase;
     }
   }
   .bar-text {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 160%; /* 51.2px */
-    letter-spacing: 0.6rem;
+    @include textValues(2rem, 600, 160%, 0.6rem);
     width: 100%;
     background-color: $purpleColor;
   }
@@ -49,10 +53,7 @@
   }
 
   .scroll-text {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.6rem;
-    letter-spacing: 0.3125rem;
+    @include textValues(1rem, 600, 1.6rem, 0.3125rem);
   }
 
   .line {

@@ -1,5 +1,19 @@
 @import '../Variables/Variables.scss';
 
+@mixin absolutePosition($x, $y) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate($x, $y);
+}
+
+@mixin textValues($size, $weight, $height, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
 .grey-container {
   position: relative;
   width: 100%;
@@ -7,10 +21,7 @@
   background-color: $greyColor;
 
   .grey-image-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-85%, -50%);
+    @include absolutePosition(-85%, -50%);
     max-width: 650px;
     z-index: 2;
 
@@ -21,10 +32,7 @@
   }
 
   .grey-text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(40%, -50%);
+    @include absolutePosition(40%, -50%);
     max-width: 500px;
 
     .arrow-container {
@@ -35,27 +43,18 @@
       margin-top: 4rem;
 
       p {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 160%; /* 25.6px */
-        letter-spacing: 4.8px;
+        @include textValues(16px, 600, 160%, 4.8px);
         margin: 0;
       }
     }
 
     h3 {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 160%; /* 51.2px */
-      letter-spacing: 0.6rem;
+      @include textValues(2rem, 600, 160%, 0.6rem);
       border-bottom: 8px solid $purpleColor;
     }
 
     p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
-      letter-spacing: 0.8px;
+      @include textValues(16px, 400, 150%, 0.8px);
       opacity: 0.8;
       margin-top: 2rem;
     }
