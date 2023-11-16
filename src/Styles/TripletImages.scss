@@ -28,6 +28,13 @@
     max-width: 640px;
     height: 600px;
 
+    .shade {
+      @include textPosition(50%, 50%);
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -44,6 +51,10 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
+
+      .header-number {
+        @include textValues(1.5rem, 600, 2.4rem, 0.3em);
+      }
 
       .header-text {
         @include textValues(2rem, 600, 3.25rem, 0.3em);
