@@ -1,5 +1,12 @@
 @import '../Variables/Variables.scss';
 
+@mixin textValues($size, $weight, $height, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
 .navbar {
   position: fixed;
   top: 0px;
@@ -15,18 +22,14 @@
   opacity: 0.85;
   box-shadow: 0px 4px 4px 0px #00000040;
   h1 {
+    @include textValues(2rem, 400, 160%, 0.6rem);
     font-family: Revalia;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 160%; /* 51.2px */
-    letter-spacing: 0.6rem;
     margin: 0px;
     text-transform: uppercase;
   }
 
   ul {
-    font-weight: 600;
-    letter-spacing: 3px;
+    @include textValues(16px, 600, 160%, 0.3rem);
     display: flex;
     justify-content: space-around;
     column-gap: 120px;
