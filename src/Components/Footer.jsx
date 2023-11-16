@@ -7,7 +7,7 @@ import tiktokLogo from './Icons/tiktok.svg';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <section className="footer-container">
       <ul>
         <li>Home</li>
         <li>Page 1</li>
@@ -21,7 +21,7 @@ const Footer = () => {
         <img src={tiktokLogo} alt="tiktokLogo" className="social_icon" />
       </div>
       <p>© Logo, Inc.</p>
-    </div>
+    </section>
   );
 };
 

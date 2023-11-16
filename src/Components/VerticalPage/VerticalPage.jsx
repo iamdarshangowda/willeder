@@ -5,11 +5,11 @@ import GreyContainer from './GreyContainer';
 
 const VerticalPage = () => {
   return (
-    <div className="vertical-container">
+    <section className="vertical-container">
       <div className="vertical-bar"></div>
       <TripletImages />
       <GreyContainer />
-    </div>
+    </section>
   );
 };
 

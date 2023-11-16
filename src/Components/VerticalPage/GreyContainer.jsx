@@ -3,11 +3,11 @@ import '../../Styles/GreyContainer.scss';
 
 const GreyContainer = () => {
   return (
-    <div className="grey-container">
+    <section className="grey-container">
       <div className="grey-image-container">
         <img src="./Rectangle.png" alt="rectangleImage" />
       </div>
-      <div className="grey-text-container">
+      <article className="grey-text-container">
         <h3>Lorem ipsum</h3>
         <div className="grey-mobile-image-container">
           <img src="./Rectangle.png" alt="rectangleImage" />
@@ -21,8 +21,8 @@ const GreyContainer = () => {
           <p>Loren ipsum</p>
           <img src="./arrow.png" alt="rectangleImage" />
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 
