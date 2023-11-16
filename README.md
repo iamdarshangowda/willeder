@@ -1,4 +1,9 @@
-# React + Vite
+# Willeder Landing Page (Assignment)
+
+# Tech Stack
+
+React + Vite
+SCSS (CSS preprocessor)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
