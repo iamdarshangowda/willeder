@@ -18,6 +18,7 @@
   align-items: center;
   gap: 20px;
   padding: 14px 80px;
+  height: 64px;
   background-color: $whiteColor;
   opacity: 0.85;
   box-shadow: 0px 4px 4px 0px #00000040;
@@ -42,8 +43,8 @@
     align-items: center;
     gap: 10px;
     img {
-      width: 45px;
-      height: 45px;
+      width: 44px;
+      height: 44px;
     }
   }
 

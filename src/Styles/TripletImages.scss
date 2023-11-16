@@ -44,7 +44,7 @@
     .image-text {
       @include textPosition(50%, 50%);
       width: 100%;
-      padding: 10px 60px;
+      padding: 40px 60px;
       color: $whiteColor;
       display: flex;
       flex-direction: column;
@@ -58,6 +58,7 @@
 
       .header-text {
         @include textValues(2rem, 600, 3.25rem, 0.3em);
+        width: 75%;
       }
 
       .sub-text {
@@ -92,7 +93,7 @@
       height: 400px;
 
       .image-text {
-        padding: 10px 30px;
+        padding: 40px 32px;
       }
 
       .shade {
