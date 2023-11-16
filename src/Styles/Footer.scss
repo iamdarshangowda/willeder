@@ -24,7 +24,7 @@
 
   .social-container {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 3.5rem;
   }
 
@@ -38,12 +38,17 @@
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 150%; /* 18px */
+    opacity: 0.8;
   }
 
   @media only screen and (max-device-width: $small) {
     ul {
       flex-direction: column;
       gap: 1.5rem;
+    }
+
+    .social-container {
+      gap: 24px;
     }
   }
 }
