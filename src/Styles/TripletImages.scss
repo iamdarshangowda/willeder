@@ -15,7 +15,7 @@
 }
 
 .triple-images {
-  margin: 25rem 0 15rem 0;
+  margin: 25rem 0 12.5rem 0;
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
@@ -50,7 +50,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 40px;
 
       .header-number {
         @include textValues(1.5rem, 600, 2.4rem, 0.3em);
@@ -86,7 +86,7 @@
   @media only screen and (max-device-width: $medium) {
     margin: 15rem 0 10rem 0;
     grid-template-columns: auto;
-    gap: 1.25rem;
+    gap: 1.5rem;
 
     .background-card {
       max-width: 100%;
@@ -94,6 +94,7 @@
 
       .image-text {
         padding: 40px 32px;
+        gap: 24px;
       }
 
       .shade {
@@ -123,10 +124,18 @@
       height: 256px;
 
       .shade {
-        width: 90%;
+        width: 85%;
       }
 
       img {
+        width: 85%;
+      }
+
+      .header-number {
+        display: none;
+      }
+
+      .sub-text {
         width: 90%;
       }
     }
